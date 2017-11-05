@@ -1,0 +1,1125 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/nikita_danilov/ontologies/usability#"
+     xml:base="http://www.semanticweb.org/nikita_danilov/ontologies/usability"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasImage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasImage">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasPerformed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasPerformed">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#isOccurredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isOccurredIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasPerformed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedOn">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasImaged -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasImaged">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasImage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasBinaryData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasBinaryData">
+        <rdfs:range rdf:resource="&xsd;base64Binary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasCommandName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasCommandName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiX -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiX">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="&xsd;int">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiY">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="&xsd;int">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasEndDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasEndDateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionX -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionX">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionY -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionY">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasStartDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasStartDateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasWidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent">
+        <rdfs:label xml:lang="ru">ДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ClickMouseActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ClickMouseActionEvent">
+        <rdfs:label xml:lang="ru">КликМышьДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent">
+        <rdfs:label xml:lang="ru">Команда</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasCommandName"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device">
+        <rdfs:label xml:lang="ru">Устройство</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformed"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event">
+        <rdfs:label xml:lang="ru">Событие</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image">
+        <rdfs:label xml:lang="ru">Изображение</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiX"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="&xsd;int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasBinaryData"/>
+                <owl:someValuesFrom rdf:resource="&xsd;base64Binary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasWidth"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiY"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="&xsd;int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasHeight"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent">
+        <rdfs:label xml:lang="ru">КлавиатураДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent">
+        <rdfs:label xml:lang="ru">МышьДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#MoveMouseActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MoveMouseActionEvent">
+        <rdfs:label xml:lang="ru">ДвижениеМышьДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region">
+        <rdfs:label xml:lang="ru">Регион</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ScrollMouseActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ScrollMouseActionEvent">
+        <rdfs:label xml:lang="ru">ПрокруткаМышьДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session">
+        <rdfs:label xml:lang="en">Session</rdfs:label>
+        <rdfs:label xml:lang="ru">Сессия</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasStartDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedOn"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isPerformedBy"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasEndDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#TypeKeyboardActionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TypeKeyboardActionEvent">
+        <rdfs:label xml:lang="ru">ВводКлавиатураДействиеСобытие</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User">
+        <rdfs:label xml:lang="ru">Пользователь</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasPerformed"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation">
+        <rdfs:label xml:lang="ru">ВариацияРегиона</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="&xsd;int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinWidth"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinHeight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasImage"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxWidth"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxHeight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
+        <wasPerformed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1"/>
+        <wasPerformed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <isOccurredIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1121 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1121">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <isOccurredIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1122 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1122">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <isOccurredIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event2111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event2111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <isOccurredIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
+        <hasName rdf:datatype="&xsd;string">Region11Name</hasName>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111"/>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
+        <hasName rdf:datatype="&xsd;string">Region21Name</hasName>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <hasName rdf:datatype="&xsd;string">RegionVariationName111</hasName>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111"/>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+        <hasName rdf:datatype="&xsd;string">Ivan Ivanov</hasName>
+        <hasPerformed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+        <hasName rdf:datatype="&xsd;string">Petr Petrov</hasName>
+        <hasPerformed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
