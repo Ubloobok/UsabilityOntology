@@ -26,6 +26,10 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:label xml:lang="ru">cодержит</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -36,6 +40,10 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasImaged"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
+        <rdfs:comment xml:lang="en">The property which associate some region variation with its image</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Свойство которое связывает вариацию региона с его изображением</rdfs:comment>
+        <rdfs:label xml:lang="en">hasImage</rdfs:label>
+        <rdfs:label xml:lang="ru">имеетИзображение</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -44,6 +52,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта</rdfs:comment>
+        <rdfs:label xml:lang="en">isContainedIn</rdfs:label>
+        <rdfs:label xml:lang="ru">содержитсяВ</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -54,6 +66,10 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformedBy"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:comment xml:lang="ru">The property that associates a user with a session that he performed</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает пользователя с сессией, которую он выполнил</rdfs:comment>
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+        <rdfs:label xml:lang="ru">выполнил</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -62,6 +78,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasAssociatedWith">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn"/>
+        <rdfs:comment xml:lang="en">The property that associates command event with the specific command instance</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает командное событие с экземпляром команды</rdfs:comment>
+        <rdfs:label xml:lang="en">wasAssociatedWith</rdfs:label>
+        <rdfs:label xml:lang="ru">связанаС</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -71,13 +91,22 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasImaged">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
+        <rdfs:comment xml:lang="en">The property that associates an image with the corresponding region variation</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает изображение с соответствующей вариацией региона</rdfs:comment>
+        <rdfs:label xml:lang="en">wasImaged</rdfs:label>
+        <rdfs:label xml:lang="ru">изображает</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn">
+        <rdfs:comment xml:lang="en">The property that associates specific command with the event in which the command was called</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает команду с командным событием, в котором команда была вызвана</rdfs:comment>
+        <rdfs:label xml:lang="en">wasInvokedIn</rdfs:label>
+        <rdfs:label xml:lang="en">былоВызваноВ</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -86,6 +115,10 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformedBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
+        <rdfs:comment xml:lang="en">The property that associates a session with the user who performed it</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает сессию с пользователем, который ее выполнял</rdfs:comment>
+        <rdfs:label xml:lang="en">wasPerformedBy</rdfs:label>
+        <rdfs:label xml:lang="ru">былаВыполненаПользователем</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -96,6 +129,10 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasUsedIn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
+        <rdfs:comment xml:lang="en">The property that associates a session with the device on which the session was run</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает сессию с устройством, на котором она выполнялась</rdfs:comment>
+        <rdfs:label xml:lang="en">wasPerformedOn</rdfs:label>
+        <rdfs:label xml:lang="ru">былаВыполненаНа</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -105,6 +142,10 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasUsedIn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
+        <rdfs:comment xml:lang="en">The property that associates a device with the sessions which were run on that device</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает устройство с сессиями, которые были на нем запущены</rdfs:comment>
+        <rdfs:label xml:lang="en">wasUsedIn</rdfs:label>
+        <rdfs:label xml:lang="ru">былоИспользованоВ</rdfs:label>
     </owl:ObjectProperty>
     
 
