@@ -581,7 +581,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#DoubleTapTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents double tap - two short taps on the screen</rdfs:comment>
         <rdfs:comment xml:lang="ru">Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику.</rdfs:comment>
+        <rdfs:label xml:lang="en">DoubleTapTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -614,7 +616,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#HoldTapTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents touch-and-hold action - continuous touch with a single finger</rdfs:comment>
         <rdfs:comment xml:lang="ru">Тач-энд-холд (touch and hold) — нажать и держать.</rdfs:comment>
+        <rdfs:label xml:lang="en">HoldTapTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -716,7 +720,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#LongTapTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents touch - a touch that is slightly longer then tap</rdfs:comment>
         <rdfs:comment xml:lang="ru">Тач (touch) — нажатие длиннее, чем Тап.</rdfs:comment>
+        <rdfs:label xml:lang="en">LongTapTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -781,7 +787,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#PinchTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image.</rdfs:comment>
         <rdfs:comment xml:lang="ru">Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения.</rdfs:comment>
+        <rdfs:label xml:lang="en">PinchTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -974,7 +982,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#SingleTapTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents tap action - single short touch with one finger</rdfs:comment>
         <rdfs:comment xml:lang="ru">Тап, тэп (tap) — короткое нажатие пальцем, сродни клику.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleTapTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -983,7 +993,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#StretchTouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image.</rdfs:comment>
         <rdfs:comment xml:lang="ru">Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения.</rdfs:comment>
+        <rdfs:label xml:lang="en">StretchTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -1024,7 +1036,9 @@
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class the represents swipe (slide) - a continuous movement of the finger across the screen</rdfs:comment>
         <rdfs:comment xml:lang="ru">Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану.</rdfs:comment>
+        <rdfs:label xml:lang="en">SwipeTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
@@ -1065,6 +1079,9 @@
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents differend kinds events related to user&apos;s tap on the touch screen</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения</rdfs:comment>
+        <rdfs:label xml:lang="en">TapTouchActionEvent</rdfs:label>
     </owl:Class>
     
 
