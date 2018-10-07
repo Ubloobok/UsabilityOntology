@@ -400,6 +400,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
+        <rdfs:comment xml:lang="en">The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)</rdfs:comment>
+        <rdfs:label xml:lang="en">ActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -441,7 +444,9 @@
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents any mouse click</rdfs:comment>
         <rdfs:comment xml:lang="ru">Клик (click) — щелчок по кнопке мыши.</rdfs:comment>
+        <rdfs:label xml:lang="en">ClickMouseActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">КликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -503,6 +508,9 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Command"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents events, related with the fact of calling a certain command (function) by the user</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем.</rdfs:comment>
+        <rdfs:label xml:lang="en">CommandEvent</rdfs:label>
         <rdfs:label xml:lang="ru">КомандаСобытие</rdfs:label>
     </owl:Class>
     
@@ -561,7 +569,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#DoubleClickMouseEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ClickMouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a double mouse click</rdfs:comment>
         <rdfs:comment xml:lang="ru">Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши.</rdfs:comment>
+        <rdfs:label xml:lang="en">DoubleClickMouseEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ДвойнойКликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -592,6 +602,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The base class for all different kinds of event that may be occured while the user is interacting with the software</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой</rdfs:comment>
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="ru">Событие</rdfs:label>
     </owl:Class>
@@ -692,6 +704,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents actions related to user&apos;s manipulations with a keyboard</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой</rdfs:comment>
+        <rdfs:label xml:lang="en">KeyboardActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">КлавиатураДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -710,6 +725,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents actions related to user&apos;s manipulations with a mouse</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью</rdfs:comment>
+        <rdfs:label xml:lang="en">MouseActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">МышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -751,6 +769,9 @@
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения</rdfs:comment>
+        <rdfs:label xml:lang="en">MoveMouseAcitonEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ДвижениеМышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -868,6 +889,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ScrollMouseActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a mouse wheel scroll</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который соответствует событию прокрутки колесика мыши</rdfs:comment>
+        <rdfs:label xml:lang="en">ScrollMouseActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ПрокруткаМышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -938,7 +962,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#SingleClickMouseEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ClickMouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a single mouse click</rdfs:comment>
         <rdfs:comment xml:lang="ru">Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleClickMouseEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ОдинарныйКликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -1047,6 +1073,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents events related to user interations with touchscreen, like smartphone or tablet PC</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера</rdfs:comment>
+        <rdfs:label xml:lang="en">TouchActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">КасаниеДействиеСобытие</rdfs:label>
     </owl:Class>
     
@@ -1056,6 +1085,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TypeKeyboardActionEvent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents clicks on a keyboard</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события нажатия клавиш клавиатуры</rdfs:comment>
+        <rdfs:label xml:lang="en">TypeKeyboardActionEvent</rdfs:label>
         <rdfs:label xml:lang="ru">ВводКлавиатураДействиеСобытие</rdfs:label>
     </owl:Class>
     
