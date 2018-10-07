@@ -7,10 +7,10 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -18,7 +18,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#contains -->
@@ -27,7 +27,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasImage -->
@@ -37,7 +37,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn -->
@@ -45,7 +45,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#isContainedIn">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#performed -->
@@ -55,7 +55,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasAssociatedWith -->
@@ -63,7 +63,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasAssociatedWith">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasImaged -->
@@ -72,13 +72,13 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasInvokedIn"/>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformedBy -->
@@ -87,7 +87,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasPerformedOn -->
@@ -97,7 +97,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#wasUsedIn -->
@@ -106,10 +106,10 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -117,7 +117,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasBinaryData -->
@@ -125,7 +125,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasBinaryData">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasCommandName -->
@@ -143,7 +143,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDateTime -->
@@ -152,7 +152,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiX -->
@@ -170,7 +170,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasDpiY -->
@@ -188,7 +188,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasEndDateTime -->
@@ -197,7 +197,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasHeight -->
@@ -215,7 +215,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionX -->
@@ -232,7 +232,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasInRegionY -->
@@ -249,7 +249,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxHeight -->
@@ -267,7 +267,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMaxWidth -->
@@ -285,7 +285,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinHeight -->
@@ -303,7 +303,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasMinWidth -->
@@ -321,7 +321,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasName -->
@@ -338,7 +338,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasStartDateTime -->
@@ -347,7 +347,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasUid -->
@@ -364,7 +364,7 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#hasWidth -->
@@ -382,10 +382,10 @@
             </rdfs:Datatype>
         </rdfs:range>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -393,7 +393,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent -->
@@ -402,7 +402,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
         <rdfs:label xml:lang="ru">ДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ClickMouseActionEvent -->
@@ -444,7 +444,7 @@
         <rdfs:comment xml:lang="ru">Клик (click) — щелчок по кнопке мыши.</rdfs:comment>
         <rdfs:label xml:lang="ru">КликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Command -->
@@ -481,7 +481,7 @@
         <rdfs:comment xml:lang="ru">Базовый класс команды, вызываемой пользователем.</rdfs:comment>
         <rdfs:label xml:lang="ru">Команда</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent -->
@@ -503,7 +503,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">КомандаСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device -->
@@ -550,7 +550,7 @@
         <rdfs:comment xml:lang="ru">Устройство, на котором выполнялись(ются) сессии.</rdfs:comment>
         <rdfs:label xml:lang="ru">Устройство</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#DoubleClickMouseEvent -->
@@ -560,7 +560,7 @@
         <rdfs:comment xml:lang="ru">Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши.</rdfs:comment>
         <rdfs:label xml:lang="ru">ДвойнойКликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#DoubleTapTouchActionEvent -->
@@ -569,7 +569,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event -->
@@ -590,7 +590,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">Событие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#HoldTapTouchActionEvent -->
@@ -599,7 +599,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Тач-энд-холд (touch and hold) — нажать и держать.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image -->
@@ -677,7 +677,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">Изображение</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent -->
@@ -686,7 +686,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
         <rdfs:label xml:lang="ru">КлавиатураДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#LongTapTouchActionEvent -->
@@ -695,7 +695,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Тач (touch) — нажатие длиннее, чем Тап.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent -->
@@ -704,7 +704,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
         <rdfs:label xml:lang="ru">МышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#MoveMouseActionEvent -->
@@ -745,7 +745,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">ДвижениеМышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#PinchTouchActionEvent -->
@@ -754,7 +754,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region -->
@@ -850,7 +850,7 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">Регион</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#ScrollMouseActionEvent -->
@@ -859,7 +859,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#MouseActionEvent"/>
         <rdfs:label xml:lang="ru">ПрокруткаМышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session -->
@@ -918,7 +918,7 @@
         <rdfs:label xml:lang="en">Session</rdfs:label>
         <rdfs:label xml:lang="ru">Сессия</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#SingleClickMouseEvent -->
@@ -928,7 +928,7 @@
         <rdfs:comment xml:lang="ru">Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие.</rdfs:comment>
         <rdfs:label xml:lang="ru">ОдинарныйКликМышьДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#SingleTapTouchActionEvent -->
@@ -937,7 +937,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Тап, тэп (tap) — короткое нажатие пальцем, сродни клику.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#StretchTouchActionEvent -->
@@ -946,7 +946,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent"/>
         <rdfs:comment xml:lang="ru">Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#SwipeTouchActionEvent -->
@@ -987,7 +987,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="ru">Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану.</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#TapTouchActionEvent -->
@@ -1027,7 +1027,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#TouchActionEvent -->
@@ -1036,7 +1036,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#ActionEvent"/>
         <rdfs:label xml:lang="ru">КасаниеДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#TypeKeyboardActionEvent -->
@@ -1045,7 +1045,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#KeyboardActionEvent"/>
         <rdfs:label xml:lang="ru">ВводКлавиатураДействиеСобытие</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User -->
@@ -1092,7 +1092,7 @@
         <rdfs:comment xml:lang="ru">Пользователь, который выполнял(ет) сессии.</rdfs:comment>
         <rdfs:label xml:lang="ru">Пользователь</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation -->
@@ -1199,239 +1199,6 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="ru">ВариацияРегиона</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Command"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CommandA</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandB -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandB">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Command"/>
-        <isContainedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211"/>
-        <wasInvokedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CommandB</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1113 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1113">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA"/>
-        <isContainedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111"/>
-        <wasAssociatedWith rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA"/>
-        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2015-06-19T02:50:57+03:00</hasDateTime>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1114 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1114">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA"/>
-        <isContainedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111"/>
-        <wasAssociatedWith rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandA"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent2112 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent2112">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandB"/>
-        <wasAssociatedWith rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandB"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Device"/>
-        <wasUsedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1"/>
-        <wasUsedIn rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
-        <hasDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2017-10-12T13:20:00-05:00</hasDateTime>
-        <hasInRegionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.0</hasInRegionX>
-        <hasInRegionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">625.0</hasInRegionY>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1121 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1121">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1122 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1122">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event2111 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event2111">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region11</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region21</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation111">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1113"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent1114"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1111"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Event1112"/>
-        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image111"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RegionVariation111</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation112">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
-        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image112"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#RegionVariation211">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Variation"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#CommandEvent2112"/>
-        <hasImage rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Image211"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region11"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session"/>
-        <contains rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Region21"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
-        <performed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session1"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivan Ivanov</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nikita_danilov/ontologies/usability#User2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#User"/>
-        <performed rdf:resource="http://www.semanticweb.org/nikita_danilov/ontologies/usability#Session2"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petr Petrov</hasName>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
