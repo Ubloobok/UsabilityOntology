@@ -7,223 +7,97 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/nikita_danilov/ontologies/usability">
     <Prefix name="" IRI="http://www.semanticweb.org/nikita_danilov/ontologies/usability#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Danilov Nikita</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">Ontology &apos;Usability&apos; created to describe and store information about interactions of user with a software user interface</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">Онтология &quot;Удобство испльзования&quot; предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <Literal>Denis Palashevskiy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">Usability</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="ru">Удобство использования</Literal>
+    </Annotation>
     <Declaration>
-        <NamedIndividual IRI="#Event1122"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#performed"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEndDateTime"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RegionVariation112"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasMaxHeight"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#User1"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TypeKeyboardActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasCommandName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDateTime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SingleClickMouseEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Image"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDpiY"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#contains"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasPerformedOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasImaged"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasUsedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasPerformedBy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CommandEvent1114"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasMinHeight"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasInRegionY"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Region11"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PinchTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Command"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Event1121"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DoubleTapTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ScrollMouseActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DoubleClickMouseEvent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Session1"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasMaxWidth"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDpiX"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Image211"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TapTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasWidth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Event"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasAssociatedWith"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HoldTapTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CommandEvent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasInvokedIn"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CommandEvent2112"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasInRegionX"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CommandB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Event1112"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasHeight"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasImage"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RegionVariation211"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Device"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Session2"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Image111"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#User"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasMinWidth"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SingleTapTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LongTapTouchActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasStartDateTime"/>
+        <Class IRI="#ActionEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ClickMouseActionEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CommandA"/>
+        <Class IRI="#Command"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Region21"/>
+        <Class IRI="#CommandEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Device1"/>
+        <Class IRI="#Device"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Variation"/>
+        <Class IRI="#DoubleClickMouseEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#User2"/>
+        <Class IRI="#DoubleTapTouchActionEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Event1111"/>
+        <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RegionVariation111"/>
+        <Class IRI="#HoldTapTouchActionEvent"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasUid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ActionEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Region"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Image112"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Session"/>
+        <Class IRI="#Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="#KeyboardActionEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Event2111"/>
+        <Class IRI="#LongTapTouchActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MouseActionEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MoveMouseActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PinchTouchActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScrollMouseActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Session"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleClickMouseEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleTapTouchActionEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="#StretchTouchActionEvent"/>
@@ -232,16 +106,181 @@
         <Class IRI="#SwipeTouchActionEvent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CommandEvent1113"/>
+        <Class IRI="#TapTouchActionEvent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MouseActionEvent"/>
+        <Class IRI="#TouchActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeKeyboardActionEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Variation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImage"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isContainedIn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#performed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasImaged"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasInvokedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasPerformedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasUsedIn"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasBinaryData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCommandName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDpiX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDpiY"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEndDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInRegionX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInRegionY"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommandA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommandB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommandEvent1113"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommandEvent1114"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CommandEvent2112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Device1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1121"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1122"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event2111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Region11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Region21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegionVariation111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegionVariation112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegionVariation211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Session1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Session2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ActionEvent"/>
@@ -1018,22 +1057,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#CommandA"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CommandA</Literal>
+        <Literal>CommandA</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#CommandB"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CommandB</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasDateTime"/>
-        <NamedIndividual IRI="#CommandEvent1113"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2015-06-19T02:50:57+03:00</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasDateTime"/>
-        <NamedIndividual IRI="#Event1111"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2017-10-12T13:20:00-05:00</Literal>
+        <Literal>CommandB</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasInRegionX"/>
@@ -1048,27 +1077,27 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#Region11"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Region11</Literal>
+        <Literal>Region11</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#Region21"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Region21</Literal>
+        <Literal>Region21</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#RegionVariation111"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RegionVariation111</Literal>
+        <Literal>RegionVariation111</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#User1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ivan Ivanov</Literal>
+        <Literal>Ivan Ivanov</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
         <NamedIndividual IRI="#User2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Petr Petrov</Literal>
+        <Literal>Petr Petrov</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#contains"/>
@@ -1326,173 +1355,708 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionEvent</IRI>
+        <Literal xml:lang="en">The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionEvent</IRI>
+        <Literal xml:lang="ru">Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ДействиеСобытие</Literal>
+        <Literal xml:lang="en">ActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActionEvent</IRI>
+        <Literal xml:lang="ru">ДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ClickMouseActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Клик (click) — щелчок по кнопке мыши.</Literal>
+        <Literal xml:lang="en">The class that represents any mouse click</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ClickMouseActionEvent</IRI>
+        <Literal xml:lang="ru">Клик (click) — щелчок по кнопке мыши.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ClickMouseActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">КликМышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">ClickMouseActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClickMouseActionEvent</IRI>
+        <Literal xml:lang="ru">КликМышьДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Command</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Базовый класс команды, вызываемой пользователем.</Literal>
+        <Literal xml:lang="ru">Базовый класс команды, вызываемой пользователем.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Command</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Команда</Literal>
+        <Literal xml:lang="en">Command</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Command</IRI>
+        <Literal xml:lang="en">The base class for the command called by user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Command</IRI>
+        <Literal xml:lang="ru">Команда</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommandEvent</IRI>
+        <Literal xml:lang="en">The class that represents events, related with the fact of calling a certain command (function) by the user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommandEvent</IRI>
+        <Literal xml:lang="ru">Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CommandEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">КомандаСобытие</Literal>
+        <Literal xml:lang="en">CommandEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommandEvent</IRI>
+        <Literal xml:lang="ru">КомандаСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Device</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Устройство, на котором выполнялись(ются) сессии.</Literal>
+        <Literal xml:lang="ru">Устройство, на котором выполнялись(ются) сессии.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Device</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Устройство</Literal>
+        <Literal xml:lang="en">Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Device</IRI>
+        <Literal xml:lang="en">The device on which the sessions were performed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Device</IRI>
+        <Literal xml:lang="ru">Устройство</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DoubleClickMouseEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши.</Literal>
+        <Literal xml:lang="en">The class that represents a double mouse click</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DoubleClickMouseEvent</IRI>
+        <Literal xml:lang="ru">Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DoubleClickMouseEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ДвойнойКликМышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">DoubleClickMouseEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DoubleClickMouseEvent</IRI>
+        <Literal xml:lang="ru">ДвойнойКликМышьДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DoubleTapTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику.</Literal>
+        <Literal xml:lang="en">The class that represents double tap - two short taps on the screen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DoubleTapTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DoubleTapTouchActionEvent</IRI>
+        <Literal xml:lang="en">DoubleTapTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">The base class for all different kinds of event that may be occured while the user is interacting with the software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="ru">Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Event</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Событие</Literal>
+        <Literal xml:lang="en">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="ru">Событие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HoldTapTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Тач-энд-холд (touch and hold) — нажать и держать.</Literal>
+        <Literal xml:lang="en">The class that represents touch-and-hold action - continuous touch with a single finger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HoldTapTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Тач-энд-холд (touch and hold) — нажать и держать.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HoldTapTouchActionEvent</IRI>
+        <Literal xml:lang="en">HoldTapTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image</IRI>
+        <Literal xml:lang="ru">Class that describes an image of the region variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image</IRI>
+        <Literal xml:lang="ru">Класс, описывающий изображение, хранящее внешний вид вариации региона</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Image</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Изображение</Literal>
+        <Literal xml:lang="en">Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Image</IRI>
+        <Literal xml:lang="ru">Изображение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KeyboardActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents actions related to user&apos;s manipulations with a keyboard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KeyboardActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#KeyboardActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">КлавиатураДействиеСобытие</Literal>
+        <Literal xml:lang="en">KeyboardActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#KeyboardActionEvent</IRI>
+        <Literal xml:lang="ru">КлавиатураДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#LongTapTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Тач (touch) — нажатие длиннее, чем Тап.</Literal>
+        <Literal xml:lang="en">The class that represents touch - a touch that is slightly longer then tap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LongTapTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Тач (touch) — нажатие длиннее, чем Тап.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LongTapTouchActionEvent</IRI>
+        <Literal xml:lang="en">LongTapTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MouseActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents actions related to user&apos;s manipulations with a mouse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MouseActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MouseActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">МышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">MouseActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MouseActionEvent</IRI>
+        <Literal xml:lang="ru">МышьДействиеСобытие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MoveMouseActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MoveMouseActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MoveMouseActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ДвижениеМышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">MoveMouseAcitonEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MoveMouseActionEvent</IRI>
+        <Literal xml:lang="ru">ДвижениеМышьДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PinchTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения.</Literal>
+        <Literal xml:lang="en">The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PinchTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PinchTouchActionEvent</IRI>
+        <Literal xml:lang="en">PinchTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">A fragment of GUI, for example, the whole window, or a part of it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="ru">Область пользовательского интерфейса, например, окно целиком, либо его отдельная часть</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Region</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Регион</Literal>
+        <Literal xml:lang="en">Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="ru">Регион</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ScrollMouseActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents a mouse wheel scroll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ScrollMouseActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который соответствует событию прокрутки колесика мыши</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ScrollMouseActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ПрокруткаМышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">ScrollMouseActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ScrollMouseActionEvent</IRI>
+        <Literal xml:lang="ru">ПрокруткаМышьДействиеСобытие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Session</IRI>
+        <Literal xml:lang="en">A period of time when a user interacts with the software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Session</IRI>
+        <Literal xml:lang="ru">Временной промежуток, в течение которого пользователь взаимодействует с программной системой</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Session</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Session</Literal>
+        <Literal xml:lang="en">Session</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Session</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Сессия</Literal>
+        <Literal xml:lang="ru">Сессия</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SingleClickMouseEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие.</Literal>
+        <Literal xml:lang="en">The class that represents a single mouse click</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SingleClickMouseEvent</IRI>
+        <Literal xml:lang="ru">Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SingleClickMouseEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ОдинарныйКликМышьДействиеСобытие</Literal>
+        <Literal xml:lang="en">SingleClickMouseEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SingleClickMouseEvent</IRI>
+        <Literal xml:lang="ru">ОдинарныйКликМышьДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SingleTapTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Тап, тэп (tap) — короткое нажатие пальцем, сродни клику.</Literal>
+        <Literal xml:lang="en">The class that represents tap action - single short touch with one finger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SingleTapTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Тап, тэп (tap) — короткое нажатие пальцем, сродни клику.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SingleTapTouchActionEvent</IRI>
+        <Literal xml:lang="en">SingleTapTouchActionEvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StretchTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения.</Literal>
+        <Literal xml:lang="en">The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StretchTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StretchTouchActionEvent</IRI>
+        <Literal xml:lang="en">StretchTouchActionEvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SwipeTouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану.</Literal>
+        <Literal xml:lang="en">The class the represents swipe (slide) - a continuous movement of the finger across the screen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SwipeTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SwipeTouchActionEvent</IRI>
+        <Literal xml:lang="en">SwipeTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TapTouchActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents differend kinds events related to user&apos;s tap on the touch screen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TapTouchActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TapTouchActionEvent</IRI>
+        <Literal xml:lang="en">TapTouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TouchActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents events related to user interations with touchscreen, like smartphone or tablet PC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TouchActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TouchActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">КасаниеДействиеСобытие</Literal>
+        <Literal xml:lang="en">TouchActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TouchActionEvent</IRI>
+        <Literal xml:lang="ru">КасаниеДействиеСобытие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TypeKeyboardActionEvent</IRI>
+        <Literal xml:lang="en">The class that represents clicks on a keyboard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TypeKeyboardActionEvent</IRI>
+        <Literal xml:lang="ru">Класс, который описывает события нажатия клавиш клавиатуры</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TypeKeyboardActionEvent</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ВводКлавиатураДействиеСобытие</Literal>
+        <Literal xml:lang="en">TypeKeyboardActionEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TypeKeyboardActionEvent</IRI>
+        <Literal xml:lang="ru">ВводКлавиатураДействиеСобытие</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#User</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Пользователь, который выполнял(ет) сессии.</Literal>
+        <Literal xml:lang="en">The user who runs sessions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#User</IRI>
+        <Literal xml:lang="ru">Пользователь, который выполнял(ет) сессии.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#User</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Пользователь</Literal>
+        <Literal xml:lang="en">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#User</IRI>
+        <Literal xml:lang="ru">Пользователь</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Variation</IRI>
+        <Literal xml:lang="en">Class that describes a region variation, since a region may have one or more variations. Variation is a unique combination of region image&apos;s height and width, or their range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Variation</IRI>
+        <Literal xml:lang="ru">Класс предназначен для описания вариации региона, так как каждый регион, в свою очередь, может иметь одну или более вариаций. Под вариацией региона в общем случае может пониматься уникальное сочетание параметров высоты и ширины изображения региона, либо их диапазон</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Variation</IRI>
-        <Literal xml:lang="ru" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ВариацияРегиона</Literal>
+        <Literal xml:lang="en">Variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Variation</IRI>
+        <Literal xml:lang="ru">ВариацияРегиона</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="ru">Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="ru">cодержит</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasImage</IRI>
+        <Literal xml:lang="en">The property which associate some region variation with its image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasImage</IRI>
+        <Literal xml:lang="ru">Свойство которое связывает вариацию региона с его изображением</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasImage</IRI>
+        <Literal xml:lang="en">hasImage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasImage</IRI>
+        <Literal xml:lang="ru">имеетИзображение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isContainedIn</IRI>
+        <Literal xml:lang="en">A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isContainedIn</IRI>
+        <Literal xml:lang="ru">Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isContainedIn</IRI>
+        <Literal xml:lang="en">isContainedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isContainedIn</IRI>
+        <Literal xml:lang="ru">содержитсяВ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#performed</IRI>
+        <Literal xml:lang="ru">The property that associates a user with a session that he performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#performed</IRI>
+        <Literal xml:lang="ru">Связывает пользователя с сессией, которую он выполнил</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#performed</IRI>
+        <Literal xml:lang="en">performed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#performed</IRI>
+        <Literal xml:lang="ru">выполнил</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasAssociatedWith</IRI>
+        <Literal xml:lang="en">The property that associates command event with the specific command instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasAssociatedWith</IRI>
+        <Literal xml:lang="ru">Связывает командное событие с экземпляром команды</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasAssociatedWith</IRI>
+        <Literal xml:lang="en">wasAssociatedWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasAssociatedWith</IRI>
+        <Literal xml:lang="ru">связанаС</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasImaged</IRI>
+        <Literal xml:lang="en">The property that associates an image with the corresponding region variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasImaged</IRI>
+        <Literal xml:lang="ru">Связывает изображение с соответствующей вариацией региона</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasImaged</IRI>
+        <Literal xml:lang="en">wasImaged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasImaged</IRI>
+        <Literal xml:lang="ru">изображает</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasInvokedIn</IRI>
+        <Literal xml:lang="en">The property that associates specific command with the event in which the command was called</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasInvokedIn</IRI>
+        <Literal xml:lang="ru">Связывает команду с командным событием, в котором команда была вызвана</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasInvokedIn</IRI>
+        <Literal xml:lang="en">wasInvokedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasInvokedIn</IRI>
+        <Literal xml:lang="en">былоВызваноВ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasPerformedBy</IRI>
+        <Literal xml:lang="en">The property that associates a session with the user who performed it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasPerformedBy</IRI>
+        <Literal xml:lang="ru">Связывает сессию с пользователем, который ее выполнял</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasPerformedBy</IRI>
+        <Literal xml:lang="en">wasPerformedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasPerformedBy</IRI>
+        <Literal xml:lang="ru">былаВыполненаПользователем</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasPerformedOn</IRI>
+        <Literal xml:lang="en">The property that associates a session with the device on which the session was run</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasPerformedOn</IRI>
+        <Literal xml:lang="ru">Связывает сессию с устройством, на котором она выполнялась</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasPerformedOn</IRI>
+        <Literal xml:lang="en">wasPerformedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasPerformedOn</IRI>
+        <Literal xml:lang="ru">былаВыполненаНа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasUsedIn</IRI>
+        <Literal xml:lang="en">The property that associates a device with the sessions which were run on that device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasUsedIn</IRI>
+        <Literal xml:lang="ru">Связывает устройство с сессиями, которые были на нем запущены</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasUsedIn</IRI>
+        <Literal xml:lang="en">wasUsedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#wasUsedIn</IRI>
+        <Literal xml:lang="ru">былоИспользованоВ</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
 
